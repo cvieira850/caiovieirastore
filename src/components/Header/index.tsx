@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
+
+import { Container } from './styles';
 
 const Header = (): JSX.Element => {
 
   return (
-    <div>
+    <Container>
       <Link to="/">
-        <h1>CVIEIRA</h1>
+        <img src={logo} alt="Caio Vieira" />
       </Link>
-    </div>
+    </Container>
   );
 };
 
