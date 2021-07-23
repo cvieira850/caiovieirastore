@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import { MdShoppingBasket } from 'react-icons/md';
 
-import { Container } from './styles';
+import logo from '../../assets/images/logo.png';
+import { Container, Cart } from './styles';
 
 const Header = (): JSX.Element => {
 
@@ -11,6 +12,16 @@ const Header = (): JSX.Element => {
       <Link to="/">
         <img src={logo} alt="Caio Vieira" />
       </Link>
+
+      <Cart to="/cart">
+        <div>
+          <strong>Meu carrinho</strong>
+          <span>
+             30 itens
+          </span>
+        </div>
+        <MdShoppingBasket size={36} color="#0076DE" />
+      </Cart>
     </Container>
   );
 };
