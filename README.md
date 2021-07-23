@@ -1,6 +1,6 @@
 # CAIOVIEIRA STORE
 <img src="./src/assets/images/logo.png" height="200px" align="center"/>
-## _Repositório destinado ao projeto de loja virtual caio vieira_
+## Repositório destinado ao projeto de loja virtual caio vieira
 
 ### Iniciando um novo projeto
 
@@ -26,7 +26,7 @@ ARQUITETURA
 
 ### Sistema de pastas
 
-* assets: pasta aonde contem as imagens, o css global e a configuração do tema.
+* assets: pasta aonde contem as imagens.
 * components: componentes do React.
 * pages: telas separadas pelas áreas.
 * util: funções genéricas que auxiliam na tarefa.
