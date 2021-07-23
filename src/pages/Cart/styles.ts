@@ -9,12 +9,14 @@ export const Container = styled.div`
   footer {
     margin-top: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     button {
       background: #F6871F;
       color: #fff;
+      width: 210px;
       border: 0;
       border-radius: 4px;
       padding: 12px 20px;
@@ -100,7 +102,7 @@ export const ProductTable = styled.table`
 export const Total = styled.div`
   display: flex;
   align-items: baseline;
-
+  margin-bottom: 50px;
   span {
     color: #999;
     font-weight: bold;

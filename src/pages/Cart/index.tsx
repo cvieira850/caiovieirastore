@@ -105,12 +105,11 @@ const Cart = (): JSX.Element => {
       </ProductTable>
 
       <footer>
-        <button type="button">Finalizar pedido</button>
-
         <Total>
           <span>TOTAL</span>
           <strong>{total}</strong>
         </Total>
+        <button type="button">Finalizar pedido</button>
       </footer>
     </Container>
   );
