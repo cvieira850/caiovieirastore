@@ -3,6 +3,7 @@ import React, { useState, useEffect }  from 'react';
 import { ProductList } from './styles';
 import { api } from '../../services/api';
 import { formatPrice } from '../../util/format';
+import { useCart } from '../../hooks/useCart';
 
 interface Product {
   id: number;
@@ -18,6 +19,7 @@ interface ProductFormatted extends Product {
 const Home = (): JSX.Element => {
 
   const [products, setProducts] = useState<ProductFormatted[]>([]);
+  const { addProduct } = useCart();
 
   useEffect( () => {
     async function loadProducts() {
@@ -31,6 +33,10 @@ const Home = (): JSX.Element => {
     loadProducts();
   }, []);
 
+  function handleAddProduct(id: number) {
+    addProduct(id);
+  }
+
   return (
     <ProductList>
       {products.map(product => (
@@ -40,7 +46,7 @@ const Home = (): JSX.Element => {
           <span>{product.priceFormatted}</span>
           <button
             type="button"
-          onClick={() => console.log('cliquei')}
+            onClick={() => handleAddProduct(product.id)}
           >
             <span>ADICIONAR AO CARRINHO</span>
           </button>

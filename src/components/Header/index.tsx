@@ -4,8 +4,11 @@ import { MdShoppingBasket } from 'react-icons/md';
 
 import logo from '../../assets/images/logo.png';
 import { Container, Cart } from './styles';
+import { useCart } from '../../hooks/useCart';
 
 const Header = (): JSX.Element => {
+  const { cart } = useCart();
+  const cartSize = cart.length;
 
   return (
     <Container>
@@ -17,7 +20,7 @@ const Header = (): JSX.Element => {
         <div>
           <strong>Meu carrinho</strong>
           <span>
-             30 itens
+          {cartSize === 1 || cartSize === 0? `${cartSize} item` : `${cartSize} itens`}
           </span>
         </div>
         <MdShoppingBasket size={36} color="#0076DE" />
