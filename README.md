@@ -2,7 +2,9 @@
 <img src="./src/assets/images/logo.png" height="200px" align="center"/>
 ## Repositório destinado ao projeto de loja virtual caio vieira
 
-### Iniciando um novo projeto
+[Link para testar](https://loving-dijkstra-12ac8c.netlify.app) - Projeto hospedado
+
+### Iniciando o Projeto
 
 ```bash
 git clone [repo]
