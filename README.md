@@ -1,6 +1,6 @@
 # CAIOVIEIRA STORE
 <img src="./src/assets/images/logo.png" height="200px" align="center"/>
-## Repositório destinado ao projeto de loja virtual caio vieira
+## Repositório destinado a criação de uma página de listagem de produtos e carrinho
 
 [Link para testar](https://loving-dijkstra-12ac8c.netlify.app) - Projeto hospedado
 
