@@ -6,7 +6,7 @@ const Footer = (): JSX.Element => {
 
   return (
     <Container>
-      <p>Desenvolvido com 💖 por Caio Vieira</p>
+      <p data-testid="footer-message">Desenvolvido com 💖 por Caio Vieira</p>
     </Container>
   );
 };
