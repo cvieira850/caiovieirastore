@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# CAIOVIEIRA STORE
+<img src="./src/assets/images/logo.png" height="200px" align="center"/>
+## _Repositório destinado ao projeto de loja virtual caio vieira_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Iniciando um novo projeto
 
-## Available Scripts
+```bash
+git clone [repo]
+yarn install # ou npm install
 
-In the project directory, you can run:
+yarn start 
+```
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ARQUITETURA
+===========
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Scripts do package.json
 
-### `yarn test`
+| Comando         | Descrição                                      | Quem usa                           |
+|-----------------|------------------------------------------------|------------------------------------|
+| start             | inicia o react-scripts-ts                      | inicia o projeto      |
+| build           | gera os arquivos transpilados                  | gera os arquivos para produção |
+| eject           | ejeta os arquivos do webpack (não recomendado) | desenvolvedor                      |
+| test | roda os testes    | desenvolvedor                      |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sistema de pastas
 
-### `yarn build`
+* assets: pasta aonde contem as imagens, o css global e a configuração do tema.
+* components: componentes do React.
+* pages: telas separadas pelas áreas.
+* util: funções genéricas que auxiliam na tarefa.
+* hooks: hooks customizados
+* services: responsável pela lógica de negócio e a comunicação com o servidor.
+* __tests__: pasta onde ficam os testes 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech
+- [Typescript](https://www.typescriptlang.org/) - TypeScript é uma linguagem de código aberto que se baseia em JavaScript
+- [ReactJS](https://pt-br.reactjs.org/) - Uma biblioteca JavaScript para criar interfaces de usuário

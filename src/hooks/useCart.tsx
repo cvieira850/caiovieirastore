@@ -8,7 +8,7 @@ import {
 } from "react";
 import { toast } from "react-toastify";
 import { api } from "../services/api";
-import { Product } from "../types";
+import { Product } from "../util/types";
 
 interface CartProviderProps {
   children: ReactNode;
