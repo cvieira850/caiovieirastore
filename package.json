@@ -47,10 +47,12 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.1",
     "@types/faker": "^5.5.7",
     "@types/react-icons": "^3.0.0",
     "@types/react-router-dom": "^5.1.8",
     "@types/styled-components": "^5.1.11",
+    "axios-mock-adapter": "^1.19.0",
     "faker": "^5.5.3"
   }
 }
